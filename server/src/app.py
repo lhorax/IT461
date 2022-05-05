@@ -4,9 +4,6 @@ from db import Db
 
 app = Flask(__name__)
 
-#g.db = Db()
-#g.db.connect()
-
 @app.route('/')
 def home():
     return "Hello Flask!"
