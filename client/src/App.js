@@ -41,6 +41,7 @@ function App() {
         navigate('/login', { state: { from: location }, replace: true });
     }
   }
+  
   useEffect(() => {
     const controller = new AbortController();
     getDogs(url, {

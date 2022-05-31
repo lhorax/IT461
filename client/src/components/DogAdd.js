@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 const DogAdd = ({addHandler}) => {
     const [name, setName] = useState('');
     const navigate = useNavigate();
-    const formHandler = (e) =>{
+    const formHandler = (e) => {
         e.preventDefault();
-        if(!name){
-            alert("Name is required!");
+        if (!name) {
+            alert('Name is required!');
             return;
         }
-        addHandler({id:0, name});
+        addHandler({id: 0, name});
         navigate('/dogs');
     }
     return (
